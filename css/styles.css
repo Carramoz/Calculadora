@@ -1,0 +1,146 @@
+*{
+    box-sizing: border-box;
+    text-align: center;
+    font-family: "Urbanist", sans-serif;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    background: url("https://images.hdqwalls.com/wallpapers/looking-far-away-4k-lb.jpg");
+    background-color: purple;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+h1{
+    color:aquamarine;
+}
+main{
+    background-color: transparent;
+    width: 20%;
+    min-width: 200px;
+    margin: 0 auto;
+    border: 1px solid aquamarine;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 2.5px 2.5px 5px 3px rgba(142, 255, 236, 0.5);
+    backdrop-filter: blur(5px);
+}
+#contenedor-pantalla{
+    width: 100%;
+    border: 1px solid aquamarine;
+    border-radius: 5px;
+    background-color: inherit;
+    box-shadow: inset 2px 2px 2px  rgba(142, 255, 236, 0.5);
+    padding: 0 5px;
+}
+#contenedor-pantalla span{
+    display: flex;
+    flex-direction: row;
+    background-color: inherit;
+    width: 100%;
+    justify-content: right;
+    border: none;
+    color: violet;
+    flex-wrap: wrap;
+    font-size: larger;
+    margin: 10px 0 0 0;
+}
+#pantalla{
+    display: block;
+    width: 100%;
+    height: 10vh;
+    border: none;
+    background-color: inherit;
+    text-align: right;
+    color: aquamarine;
+    outline: unset;
+    font-size: xx-large;
+}
+.container-grid{
+    display: grid;
+    width: 100%;
+    height: 40vh;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-areas: 
+    "limpiar marca marca sumar"
+    "siete ocho nueve restar"
+    "cuatro cinco seis multiplicar"
+    "uno dos tres dividir"
+    "punto cero borrar igual";
+    border-radius: 5px;
+    margin-top: 20px;
+}
+button{
+    background-color: inherit;
+    color: aquamarine;
+    border-radius: 5px;
+    border-color: aquamarine;
+    box-shadow: inset 1px 1px 2px  rgba(142, 255, 236, 0.5);
+    font-size: x-large;
+}
+.btnLimpiar{
+    grid-area: limpiar;
+    color: violet;
+    font-size: medium;
+}
+.marca{
+    grid-area: marca;
+    font-size: 10px;
+}
+.btnSumar{
+    grid-area: sumar;
+}
+.btn7{
+    grid-area: siete;
+}
+.btn8{
+    grid-area: ocho;
+}
+.btn9{
+    grid-area: nueve;
+}
+.btnRestar{
+    grid-area: restar;
+}
+.btn4{
+    grid-area: cuatro;
+}
+.btn5{
+    grid-area: cinco;
+}
+.btn6{
+    grid-area: seis;
+}
+.btnMultiplicar{
+    grid-area: multiplicar;
+}
+.btn1{
+    grid-area: uno;
+}
+.btn2{
+    grid-area: dos;
+}
+.btn3{
+    grid-area: tres;
+}
+.btnDividir{
+    grid-area: dividir;
+}
+.btnPunto{
+    grid-area: punto;
+}
+.btn0{
+    grid-area: cero;
+}
+.btnBorrar{
+    grid-area: borrar;
+}
+.btnIgual{
+    grid-area: igual;
+    border-color: violet;
+    background-color: rgba(137, 43, 226, 0.4);
+    color: aquamarine;
+    box-shadow: inset 1px 1px 2px rgba(128, 0, 128, 0.5);
+}
